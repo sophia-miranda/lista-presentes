@@ -97,14 +97,6 @@ async function loadGifts() {
             const title = document.createElement('h3');
             title.textContent = gift.nome;
 
-            const description = document.createElement('p');
-            description.className = 'gift-description';
-            appendDescription(description, gift.descricao);
-
-            const price = document.createElement('div');
-            price.className = 'gift-price';
-            price.textContent = formatCurrency(gift.preco);
-
             const actions = document.createElement('div');
             actions.className = 'd-grid gap-2';
 
@@ -157,7 +149,7 @@ async function loadGifts() {
 
             actions.append(reserveButton, storeButton);
 
-            body.append(title, description, price, actions);
+            body.append(title, actions);
             card.append(image, body);
             column.append(card);
 
