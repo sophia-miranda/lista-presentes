@@ -11,4 +11,4 @@ class_name = "ReservationsStore"
 tag = "v1"
 new_sqlite_classes = ["ReservationsStore"]
 [vars]
-ALLOWED_ORIGINS = "http://localhost:8000,https://herlandio.github.io"
+ALLOWED_ORIGINS = "http://localhost:8000,https://sophia-miranda.github.io"
